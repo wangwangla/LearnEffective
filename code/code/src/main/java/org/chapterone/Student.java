@@ -1,2 +1,4 @@
-package org.chapterone;public class Student {
+package org.chapterone;
+
+public class Student extends People{
 }
