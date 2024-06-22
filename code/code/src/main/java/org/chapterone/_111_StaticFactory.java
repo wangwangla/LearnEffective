@@ -1,5 +1,8 @@
 package org.chapterone;
 
+import org.chapterone.bean.People;
+import org.chapterone.bean.Student;
+
 import java.lang.reflect.Constructor;
 
 public class _111_StaticFactory {
@@ -9,7 +12,7 @@ public class _111_StaticFactory {
     }
 
     /**
-     * 存在名称
+     * 存在名称  明白含义
      * @return
      */
     public static People createPeople(){
@@ -18,6 +21,8 @@ public class _111_StaticFactory {
 
     /**
      * 两个构造函数  不知所云
+     *
+     *
      */
     public void createInstace(){
         People people1 = new People(12,"xx");
@@ -27,6 +32,8 @@ public class _111_StaticFactory {
 
     /**
      * 不需要每次都创建对象
+     *
+     *
      */
     private static People people = new People();
     public static People createInstancePeople(){
@@ -35,6 +42,8 @@ public class _111_StaticFactory {
 
     /**
      * 可以返回子类
+     *
+     *
      */
     private static People createInstace2(){
         return new Student();

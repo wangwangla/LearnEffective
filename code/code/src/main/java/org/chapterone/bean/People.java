@@ -1,4 +1,4 @@
-package org.chapterone;
+package org.chapterone.bean;
 
 public class People {
     private String name;
