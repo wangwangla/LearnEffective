@@ -1,8 +1,10 @@
 package org.chapterone;
 
-public class _132_Singleton2 {
-    private static final _132_Singleton2 INSTANCE = new _132_Singleton2();
-    private _132_Singleton2(){
+import java.io.Serializable;
+
+public class _133_Singleton3 implements Serializable {
+    private static transient final _133_Singleton3 INSTANCE = new _133_Singleton3();
+    private _133_Singleton3(){
 
     }
 
@@ -10,7 +12,11 @@ public class _132_Singleton2 {
      * 共有域 清楚表达这是一个单例，   第二个 更简单
      * @return
      */
-    public static _132_Singleton2 getInstance(){
+    public static _133_Singleton3 getInstance(){
+        return INSTANCE;
+    }
+
+    public _133_Singleton3 readReslove(){
         return INSTANCE;
     }
 }
